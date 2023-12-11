@@ -29,8 +29,8 @@ def f_grad(x: np.ndarray, m: float, b: float) -> tuple:
     Returns:
     tuple: Tuple containing the gradients with respect to m and b.
     """
-    grad_m = x
-    grad_b = np.ones_like(x)
+    grad_m = x # df/dm = x
+    grad_b = np.ones_like(x) # df/db = 1
     return (grad_m, grad_b)
 
 
