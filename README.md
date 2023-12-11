@@ -1,2 +1,2 @@
 # some-optimization-algorithms
-Just some ptimization algorithms
+Just some optimization algorithms
