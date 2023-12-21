@@ -1,4 +1,6 @@
 """
+Author: Raphael Senn
+
 Conjugate Gradient Method for Solving Linear Systems
 
 Consider the linear system Ax = b given by:
