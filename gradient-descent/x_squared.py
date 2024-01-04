@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -46,8 +45,8 @@ def optimize_without_backtracking(x0: float, tau: float, max_iterations: int, pl
     x = np.linspace(-10, 10, 1000)
     y = f(x)
 
-    # Plotting setup
     if plot: 
+        # Plotting setup
         plt.figure(num="f(x) = x²")
         plt.xlabel("x")
         plt.ylabel("y")
@@ -61,8 +60,8 @@ def optimize_without_backtracking(x0: float, tau: float, max_iterations: int, pl
         # Update current position
         current_pos = (x0, f(x0))
 
-        # Plotting
         if plot: 
+            # Plotting
             plt.plot(x, y)
             plt.scatter(current_pos[0], current_pos[1], color="red")
             plt.pause(0.0001)
@@ -87,10 +86,9 @@ def optimize_with_backtracking(x0: float, eps: float, beta: float, max_iteration
     # Data for plotting f(x)
     x = np.linspace(-10, 10, 1000)
     y = f(x)
-    
 
-    # Plotting setup
     if plot: 
+        # Plotting setup
         current_pos = (x0, f(x0))
         plt.figure(num="f(x) = x²")
         plt.xlabel("x")
@@ -111,8 +109,8 @@ def optimize_with_backtracking(x0: float, eps: float, beta: float, max_iteration
         # Update current position
         current_pos = (x0, f(x0))
         
-        # Plotting
         if plot:
+            # Plotting
             plt.plot(x, y)
             plt.scatter(current_pos[0], current_pos[1], color="red")
             plt.pause(0.0001)
