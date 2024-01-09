@@ -18,7 +18,7 @@ with an startvalue $x^{0}$.
 
 The stepsize $\tau^{k}$ should be chosen optimal, that the following condition is satisfied:
 
-f($x^k$ - $\tau^k$ grad f($x^k$) <= f($x^k$ - $\epsilon$ grad f($x^k$) $\forall$ $\epsilon >= 0
+f($x^k$ - $\tau^k$ grad f($x^k$) $\leq$ f($x^k$ - $\epsilon$ grad f($x^k$) $\forall$ $\epsilon$ $\geq$ 0
 
 
 
