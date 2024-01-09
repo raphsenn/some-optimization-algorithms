@@ -24,7 +24,7 @@ f($x^k$ - $\tau^k$ grad f($x^k$) $\leq$ f($x^k$ - $\epsilon$ grad f($x^k$) $\for
 
 #### Armijo rule
 
-f($x^k$ - $\tau^k$ grad f($x^k$) - f($x^k$) $\leq$ $\delta$ $\tau$ grad $(f($x^k$))^T$ (- grad f($x^k$)
+f($x^k$ - $\tau^k$ grad f($x^k$) - f($x^k$) $\leq$ $\delta$ $\tau$ grad f($x^k$)^T (- grad f($x^k$)
 
 with $\delta \in (0, 1)$ 
 
