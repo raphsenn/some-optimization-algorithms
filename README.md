@@ -37,6 +37,17 @@ while f(x_k - tau * f_grad(x_k)) - f(x_k) > delta * tau * f_grad(x_k).T * f_grad
   tau = beta * tau
 ```
 
+### Newtons method
+Newtons method is and iterativ Algorithm (like Gradient descent) to find a local optimum. It incorporates not only the first derivative but also the second derivative in its calculations.
+
+In the multidimensional case, this is given by the Hessian matrix.
+
+hess f = frac{\partial^2 f}{\partial x_{1}^2} & \frac{\partial^2 f}{\partial x_{1}\partial x_{2}} & \ldots & \frac{\partial^2 f}{\partial x_{1}\partial x_{n}} \\
+\frac{\partial^2 f}{\partial x_{2}\partial x_{1}} & \frac{\partial^2 f}{\partial x_{2}^2} & \ldots & \frac{\partial^2 f}{\partial x_{2}\partial x_{n}} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2 f}{\partial x_{n}\partial x_{1}} & \frac{\partial^2 f}{\partial x_{n}\partial x_{2}} & \ldots & \frac{\partial^2 f}{\partial x_{n}^2}
+\end{bmatrix}\]
+
 ### Gauss-Newton algorithm (and least squares)
 
 
