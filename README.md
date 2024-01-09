@@ -32,7 +32,7 @@ with $\delta \in (0, 1)$
 
 ```js
 beta = 0.9
-while f(x0 - tau * f_grad(x0)) - f(x0) > -eps * f_grad(x0) ** 2
+while f(x0 - tau * f_grad(x0)) - f(x0) > - delta * tau * f_grad(x0) ** 2
   tau = beta * tau
 ```
 
