@@ -33,7 +33,7 @@ with $\delta \in (0, 1)$ and usually $\delta$ = 10e-4.
 ```js
 beta = 0.9
 delta = 10e-4
-while f(x_k - tau * f_grad(x_k)) - f(x_k) > delta * tau * f_grad(x_k).T * f_grad(x_k)
+while f(x_k - tau * f_grad(x_k)) - f(x_k) > delta * tau * f_grad(x_k).T * (-f_grad(x_k))
   tau = beta * tau
 ```
 
