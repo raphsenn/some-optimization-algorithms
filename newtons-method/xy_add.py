@@ -28,6 +28,9 @@ def f(x, y):
     """
     return x + y
 
+def c(x, y):
+    return 2 - x * x - y * y
+
 
 def grad_L(x, y, a):
     return np.array([[1 + 2*x*a], [1 + 2*y*a], [2 - x * x - y * y]])
@@ -37,7 +40,6 @@ def Jacobian_grad_L(x, y, a):
     return np.array([[2 * a, 0 , 2 * x], [0, 2 * a, 2 * y], [-2 * x, - 2 * y, 0]])
 
 def optimize(z_0, max_iterations: int):
-    
     for _ in range(max_iterations): 
         F_k = grad_L(z_0[0], z_0[1], z_0[2])
         J_k = Jacobian_grad_L(z_0[0], z_0[1], z_0[2])
@@ -48,5 +50,23 @@ def optimize(z_0, max_iterations: int):
 
 
 if __name__ == '__main__':
-    print(optimize(np.array([0, -2, 1]), 100))
+    z_0 = np.array([0, -2, 1]) # Initial guess.
+    result = optimize(z_0, 10)
 
+    x = np.linspace(-3, 3, 400)
+    y = np.linspace(-3, 3, 400)
+    X, Y = np.meshgrid(x, y)
+
+    Z_f = f(X, Y)
+    Z_c = c(X, Y)
+
+    plt.contour(X, Y, Z_f, levels=20, cmap='viridis', label='Zielfunktion')
+    plt.contour(X, Y, Z_c, levels=[0], colors='red', label='Gleichheitsbeschränkung')
+
+    plt.scatter(result[0], result[1], color='green', marker='x', label='optimum')
+
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
