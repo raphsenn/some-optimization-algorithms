@@ -42,12 +42,7 @@ Newtons method is and iterativ Algorithm (like Gradient descent) to find a local
 
 In the multidimensional case, this is given by the Hessian matrix.
 
-\[H = \begin{bmatrix}
-\frac{\partial^2 f}{\partial x_{1}^2} & \frac{\partial^2 f}{\partial x_{1}\partial x_{2}} & \ldots & \frac{\partial^2 f}{\partial x_{1}\partial x_{n}} \\
-\frac{\partial^2 f}{\partial x_{2}\partial x_{1}} & \frac{\partial^2 f}{\partial x_{2}^2} & \ldots & \frac{\partial^2 f}{\partial x_{2}\partial x_{n}} \\
-\vdots & \vdots & \ddots & \vdots \\
-\frac{\partial^2 f}{\partial x_{n}\partial x_{1}} & \frac{\partial^2 f}{\partial x_{n}\partial x_{2}} & \ldots & \frac{\partial^2 f}{\partial x_{n}^2}
-\end{bmatrix}\]
-
-
+<p float="left">
+   <img src="./res/hess.png">
+</p>
 
