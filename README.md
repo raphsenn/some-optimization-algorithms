@@ -30,11 +30,21 @@ with $\delta \in (0, 1)$ and usually $\delta$ = 10e-4.
 
 ##### Example:
 
-```js
+```python
 beta = 0.9
 delta = 10e-4
 while f(x_k - tau * f_grad(x_k)) - f(x_k) > delta * tau * f_grad(x_k).T * (-f_grad(x_k)):
   tau = beta * tau
+```
+
+With this knowledge, we are ready, to implement the full gradient descent algorithm (with line search).
+
+```python
+for _ in range(max_iterations):
+    tau = 1
+    while f(x_k - tau * f_grad(x_k)) - f(x_k) > delta * tau * f_grad(x_k).T * (-f_grad(x_k)):
+        tau = beta * tau
+    x_k = x_k - tau * f_grad(x_k)
 ```
 
 ### Newtons method
