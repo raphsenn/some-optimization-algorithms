@@ -50,9 +50,20 @@ for _ in range(max_iterations):
 ### Newtons method
 Newtons method is and iterativ Algorithm (like Gradient descent) to find a local optimum. It incorporates not only the first derivative but also the second derivative in its calculations.
 
-In the multidimensional case, this is given by the Hessian matrix.
+Let $f \in C^{2}$ (at least one time differentiable). The gradient of f, f' = grad f = ($\displaystyle \frac{\partial f}{\partial x_{1}}$, $\displaystyle \frac{\partial f}{\partial x_{2}}$, ..., $\displaystyle \frac{\partial f}{\partial x_{n}}$)^T (T for transpose).
+In the multidimensional case the second derivative f'', is given by the Hessian matrix. f'' = $H_{f}$.
 
 <p float="left">
    <img src="./res/hess.png">
 </p>
+
+#### Iterative Method
+
+$x^{k + 1}$ = $x^{k}$ - $\tau^{k}$ $H_{f}^{-1}$ grad f($x^{k}$)
+
+$Note: We use the inverse of the Hessian Matrix. We can use Armijo- and Wolfe-Conditions, to make the algorithm more efficient.$
+
+
+
+
 
