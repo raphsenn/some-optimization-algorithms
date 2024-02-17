@@ -70,8 +70,8 @@ The Gauss–Newton algorithm is used to solve non-linear least squares problems,
 
 
 <p float="left">
-   <img src="./res/gauss_newton_unfit_1.png" width=500 height=500>
-   <img src="./res/gauss_newton_fit_1.png" width=500 height=500>
+   <img src="./res/gauss_newton_unfit_1.png" width=400 height=400>
+   <img src="./res/gauss_newton_fit_1.png" width=400 height=400>
 </p>
   
 
