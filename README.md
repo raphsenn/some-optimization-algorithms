@@ -69,5 +69,10 @@ Note: We use the inverse of the Hessian Matrix. We can use Armijo- and Wolfe-Con
 The Gauss–Newton algorithm is used to solve non-linear least squares problems, which is equivalent to minimizing a sum of squared function values.
 
 
+<p float="left">
+   <img src="./res/gauss_newton_unfit_1.png" width=300 height=300>
+   <img src="./res/gauss_newton_fit_1.png" width=300 height=300>
+</p>
+  
 
 
