@@ -68,6 +68,18 @@ Note: We use the inverse of the Hessian Matrix. We can use Armijo- and Wolfe-Con
 
 The Gauss–Newton algorithm is used to solve non-linear least squares problems, which is equivalent to minimizing a sum of squared function values.
 
+
+```python
+old = np.array([m0, b0])
+for _ in range(max_iter):
+    jac = jacobian(x, old[0], old[1])
+    loss = f_loss(x, old[0], old[1], y)
+    new = old + np.linalg.inv(jac.T@jac)@jac.T@loss
+    if np.linalg.norm(old-new) < tol:
+        break
+```
+
+
 #### Examples
 
 <p float="left">
