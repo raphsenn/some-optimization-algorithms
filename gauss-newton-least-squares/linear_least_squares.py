@@ -105,7 +105,7 @@ def main():
     # Create plot
     plt.figure()
     plt.scatter(x, y, label='Original Data')
-    plt.plot(x, y_hat, color="red", label="Fitted Function") 
+    plt.plot(x, y_hat, color="red", label="Fitted function") 
     plt.legend()
     plt.show()
 
