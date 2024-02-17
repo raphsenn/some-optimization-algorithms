@@ -64,6 +64,10 @@ $x^{k + 1}$ = $x^{k}$ - $\tau^{k}$ $H_{f}^{-1}$ grad f($x^{k}$)
 Note: We use the inverse of the Hessian Matrix. We can use Armijo- and Wolfe-Conditions, to make the algorithm more efficient.
 
 
+### Gauss Newton method
+
+The Gauss–Newton algorithm is used to solve non-linear least squares problems, which is equivalent to minimizing a sum of squared function values.
+
 
 
 
